@@ -2,11 +2,14 @@ let ar=[]
 let br=[]
 for(let i=0;i<9;i++){
     let tar=[] 
+    let par=[]
     for(let j=0;j<9;j++){
-        tar.push(Math.floor(Math.random()*10));
+        let x=(Math.floor(Math.random()*10));
+        tar.push(x)
+        par.push(x)
     }
     ar.push(tar);
-    br.push(tar)
+    br.push(par)
 }
 for(let i=0;i<9;i++){
     for(let j=0;j<9;j++){
@@ -28,7 +31,7 @@ for (let i = 1; i < m; i++) {
 }
 let ans=ar[8][8];
 document.getElementById("an").innerHTML=ans;
-let cs=ar[0][0];
+let cs=br[0][0];
 document.getElementById("maahe").innerHTML=cs;
 let i=0,j=0;
 document.getElementById(1+"").innerHTML="<img style='height:50px;width:80%;' src='jump.gif'>"
@@ -71,6 +74,7 @@ function func2(){
     else{
         document.getElementById((i*10+(j+1))+"").innerHTML="<img style='height:50px;width:80%;' src='downarrow.png'>"
         i++;
+        
         cs+=br[i][j];
         document.getElementById((i*10+(j+1))+"").innerHTML="<img style='height:50px;width:80%;' src='jump.gif'>"
     }
