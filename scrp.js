@@ -1,10 +1,12 @@
 let ar=[]
+let br=[]
 for(let i=0;i<9;i++){
     let tar=[] 
     for(let j=0;j<9;j++){
         tar.push(Math.floor(Math.random()*10));
     }
     ar.push(tar);
+    br.push(tar)
 }
 for(let i=0;i<9;i++){
     for(let j=0;j<9;j++){
@@ -47,7 +49,7 @@ function func1(){
         document.getElementById((i*10+(j+1))+"").innerHTML="<img style='height:50px;width:80%;' src='arrowright.png'>"
         j++;
         
-        cs+=ar[i][j];
+        cs+=br[i][j];
         document.getElementById((i*10+(j+1))+"").innerHTML="<img style='height:50px;width:80%;' src='jump.gif'>"
     }
     document.getElementById("maahe").innerHTML=cs;
@@ -69,7 +71,7 @@ function func2(){
     else{
         document.getElementById((i*10+(j+1))+"").innerHTML="<img style='height:50px;width:80%;' src='downarrow.png'>"
         i++;
-        cs+=ar[i][j];
+        cs+=br[i][j];
         document.getElementById((i*10+(j+1))+"").innerHTML="<img style='height:50px;width:80%;' src='jump.gif'>"
     }
     document.getElementById("maahe").innerHTML=cs;
