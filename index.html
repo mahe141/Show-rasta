@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            body{
+                background-color: #0f0f0f;
+            }
+            button{
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 0 8px rgb(207, 207, 207);
+            }
+
+            .center {
+            
+            margin: 0 auto;
+            
+            }   
+            #pot {
+               
+                position: absolute;
+                -webkit-animation: linear infinite;
+                -webkit-animation-name: run;
+                -webkit-animation-duration: 15s;
+            }
+            @-webkit-keyframes run {
+                0% {
+                    left: 5%;
+                }
+                50% {
+                    left: 86%;
+                }
+                100% {
+                    left: 5%;    
+                }
+            }
+            .glow {
+                
+                color: #1a1919;
+                text-align: center;
+                animation: glow 1s ease-in-out infinite alternate;
+                }
+
+                @-webkit-keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                }
+                
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                }
+                }
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron" style="margin-top:10px; margin-left:2%;margin-right: 2%;">
+            <h1  style="text-align: center;font-size: 50px;;"  class="glow">Show-Rasta</h1>
+            <br><br>
+            <div  style="background-color: rgb(255, 255, 251);height:100px;">
+                    <img id="pot" src="sad-walk.gif" height="100px"> 
+            </div>
+            <br>
+            <p class="lead"><b><big>Welcome to <b>Show-Rasta</b></big></b>. This is a type of Brain game.</p>
+            <hr class="my-4">
+            <p>In this Game, Mahesh is at school. Mahesh want to reach home there are many ways for Mahesh to reach home so he is scared that he is going to miss the route.So his mother wanted to reach mahesh as late as he can because he is very naughty child always performs tasks which results her headache so she taught him a song by considering the long path from school to home. so Mahesh always moves in that long path by singing the sing taught by his mom. But recently he came to know the plan made by his mom and he decided to move to home in least time.so help him to reach his home in the min path <br><br><b>Note : The boy can move either right or by down.</b></p>
+            <br>
+            <p class="lead">
+                <a href="game.html"><button type="button" class="btn btn-secondary" >Play -></button></a>
+            </p>
+    </div>
+    </body>
+</html>

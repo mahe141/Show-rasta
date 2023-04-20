@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            table{
+                background-color: aliceblue;
+                margin:auto;
+                width: 70%;
+                height: 70%;
+            }
+            tr,td{
+                background-color: aliceblue;
+                margin: auto;
+                border:2px solid black;
+                width:500px;
+                height:50px;
+                text-align: center;
+            }
+            tr:nth-child(even) {background-color: #f2f2f2;}    
+            .center {
+            
+            margin: 0 auto;
+            
+            }
+
+            .glow {
+               
+                color: #fff;
+                text-align: center;
+                animation: glow 1s ease-in-out infinite alternate;
+                }
+
+                @-webkit-keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                }
+                
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                }
+                }
+            
+        </style>
+    </head>
+    
+    <body >
+        <div class='center'>
+            <p class="glow" style="font-size: 70px;">Show-Rasta</p>
+        </div>
+
+        <table>
+            <tr>
+                <td id="1">1</td>
+                <td id="2">1</td>
+                <td id="3">1</td>
+                <td id="4">1</td>
+                <td id="5">1</td>
+                <td id="6">1</td>
+                <td id="7">1</td>
+                <td id="8">1</td>
+                <td id="9">1</td>
+            </tr>
+            <tr>
+                <td id="11">1</td>
+                <td id="12">1</td>
+                <td id="13">1</td>
+                <td id="14">1</td>
+                <td id="15">1</td>
+                <td id="16">1</td>
+                <td id="17">1</td>
+                <td id="18">1</td>
+                <td id="19">1</td>
+            </tr><tr>
+                <td id="21">1</td>
+                <td id="22">1</td>
+                <td id="23">1</td>
+                <td id="24">1</td>
+                <td id="25">1</td>
+                <td id="26">1</td>
+                <td id="27">1</td>
+                <td id="28">1</td>
+                <td id="29">1</td>
+            </tr><tr>
+                <td id="31">1</td>
+                <td id="32">1</td>
+                <td id="33">1</td>
+                <td id="34">1</td>
+                <td id="35">1</td>
+                <td id="36">1</td>
+                <td id="37">1</td>
+                <td id="38">1</td>
+                <td id="39">1</td>
+            </tr><tr>
+                <td id="41">1</td>
+                <td id="42">1</td>
+                <td id="43">1</td>
+                <td id="44">1</td>
+                <td id="45">1</td>
+                <td id="46">1</td>
+                <td id="47">1</td>
+                <td id="48">1</td>
+                <td id="49">1</td>
+            </tr><tr>
+                <td id="51">1</td>
+                <td id="52">1</td>
+                <td id="53">1</td>
+                <td id="54">1</td>
+                <td id="55">1</td>
+                <td id="56">1</td>
+                <td id="57">1</td>
+                <td id="58">1</td>
+                <td id="59">1</td>
+            </tr><tr>
+                <td id="61">1</td>
+                <td id="62">1</td>
+                <td id="63">1</td>
+                <td id="64">1</td>
+                <td id="65">1</td>
+                <td id="66">1</td>
+                <td id="67">1</td>
+                <td id="68">1</td>
+                <td id="69">1</td>
+            </tr>
+            <tr>
+                <td id="71">1</td>
+                <td id="72">1</td>
+                <td id="73">1</td>
+                <td id="74">1</td>
+                <td id="75">1</td>
+                <td id="76">1</td>
+                <td id="77">1</td>
+                <td id="78">1</td>
+                <td id="79">1</td>
+            </tr>
+            <tr>
+                <td id="81">1</td>
+                <td id="82">1</td>
+                <td id="83">1</td>
+                <td id="84">1</td>
+                <td id="85">1</td>
+                <td id="86">1</td>
+                <td id="87">1</td>
+                <td id="88">1</td>
+                <td id="89">1</td>
+            </tr>
+            <tr><td colspan="4"><button style="background-color:rgb(144, 179, 209);width:100%;height:100%;" onclick="func1()"><b><big>Right</big></b></button></td><td colspan="4"><button style="background-color:rgb(131, 213, 213);width:100%;height:100%;" onclick="func2()"><b><big>Down</big></b></button></td><td style="background-color:rgb(184, 129, 235);" id="res"><b><big>END</big></b></td></tr>
+        </table>
+        <br><br>
+        <div style="height: fit-content;width: 100%;">
+            <div style="display: inline-block;border:10px solid white; color:#fff;height: 100%;width: 49%;">
+                <h2 class="glow" style="color: #f2f1f1;"><center>Expected ans</center></h2>
+                <center><h4 id="an"></h4></center>
+            </div>
+            <div style="display: inline-block;border:10px solid white; color:#fff;height: 100%;width: 46%;">
+                <h2 class="glow" style="color: #f5f4f4;"><center>current ans</center></h2>
+                <center><h3 id="maahe">-</h3></center>
+            </div>
+            
+        </div>
+        <button  style="margin-left:45%;margin-top:50px;width:100px;height:50px;" onclick="func3()">RESET</button>
+        <script src="scrp.js"></script>
+    </body>
+</html>
